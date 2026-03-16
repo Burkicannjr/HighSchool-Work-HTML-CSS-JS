@@ -1,0 +1,45 @@
+body{
+    background-color: lightyellow;
+}
+a{
+    text-decoration: none;
+}
+.mesajkutusu,
+.mesajkutusu2{
+    clear: both;
+    margin-top: 10px;
+    width: 250px;
+    height: 60px;
+    border-radius: 15px;
+}
+.mesajkutusu{
+    background-color: plum;
+}
+.mesajkutusu:hover{
+    background-color: lavender;
+    cursor: pointer;
+}
+.mesajkutusu2{
+    background-color: #deb0db;
+}
+.mesajkutusu2:hover{
+    background-color: #c4b2b7;
+    cursor: pointer;
+}
+.mesajkutusu img,
+.mesajkutusu2 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 35px;
+    float: left;
+    margin: 5px;
+}
+.adSoyad{
+    padding-top: 5px;
+    color: black;
+}
+.tarih{
+    padding-top: 5px;
+    font-size: 10px;
+    color: dimgray;
+}
