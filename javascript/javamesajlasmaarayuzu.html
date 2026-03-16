@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body {background-color: gray;
+        font-weight: bold;
+    font-family: sans-serif;
+        }
+
+     #genelCerceve {
+        background-color: lightblue;
+        border-radius: 10px;
+        width: 400px;
+        min-height: 500px;
+        padding-bottom: 10px;
+     }
+
+     #mesajGirisi{
+        background-color: white;
+        border-radius: 10px 10px 0 0;
+        width: 400px;
+        height: 70px;
+     }
+
+     #mesajGirisi > img {
+        width: 50px; height: 50px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 10px;
+        border-radius: 50%; 
+     }
+
+        #mesajGirisi > input[type="text"] {
+            margin-top: 25px;
+            margin-left: 10px;
+            padding: 5px;
+        }
+
+        #mesajKutulari {
+            background-color: white;
+            border-radius: 3px;
+            width: 380px;
+            margin: 10px auto;
+            min-height: 20px;
+        }
+        
+        .gidenMesaj{
+            border-bottom: 1px solid #eee;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+         .gidenMesaj > img{
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+            border-radius: 50%;
+         }
+
+        .mesajMetni {
+        flex-grow: 1;
+        font-size: 10px;
+        }
+
+        .tarih { color: gray;
+            font-size: 10px;
+            margin-left: 10px;
+            white-space: nowrap;
+        }
+    </style>
+
+    
+        
+</head>
+<body>
+    <div id="genelCerceve">
+        <div id="mesajGirisi">
+            <img src="profile.png" alt="profil">
+            <input type="text" name="" id="mesaj" placeholder="Mesajınızı giriniz...">
+            <input type="button"  value="Gönder" onclick="mesajGonder()">
+            </div>
+    </div>
+    <div id="mesajKutulari">
+
+    </div>
+
+    <script>
+        function mesajGonder() {
+            var mesajInput = document.getElementById("mesaj");
+            var mesaj = mesajInput.value;
+
+            if (mesaj.trim() === "" )return;
+
+            var d = new Date();
+            var saat= d.getHours();
+            var dakika = d.getMinutes().toString().padStart(2, '0');
+
+            var yeniMesaj = `<div class= 'gidenMesaj'>
+                <img src= 'proile.png'>
+                <span class='mesajMetni'>${mesaj}</span>
+                <span class = 'tarih'>${saat}:${dakika}</span>
+            </div>`;
+
+            document.getElementById("mesajKutulari").innerHTML += yeniMesaj;
+
+            mesajInput.value = "";
+            mesajInput.focus();
+            
+                
+
+
+        }
+    </script>
+</body>
+</html>

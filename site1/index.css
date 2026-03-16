@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffed00
+    
+}
+
+header{
+    background-color: #163962;
+    color: #ffed00;
+    padding: 15px;
+    text-align: center;
+}
+nav a{
+    color: #ffed00;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+    
+
+
+
+.about{
+    text-align: center;
+    color: #163962;
+
+}
+
+.services{
+    text-align: center;
+    color: #163962;
+    
+}
+
+
+footer{
+    background-color: #163962;
+    color: #ffed00;
+    padding: 10px;  
+    text-align: center;
+}

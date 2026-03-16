@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .kutu {
+            width: 150px;
+            height: 80px;
+            background-color: lightgray;
+            margin: 10px;
+            text-align: center;
+            line-height: 80px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="kutu">Kutu 1</div>
+    <div class="kutu">Kutu 2</div>
+    <div class="kutu">Kutu 3</div>
+
+    <script>
+         let kutular = document.getElementsByClassName("kutu");
+
+        for (let i = 0; i < kutular.length; i++) {
+            kutular[i].style.backgroundColor = "orange";
+            kutular[i].style.color = "white";
+        }
+    </script>
+</html>

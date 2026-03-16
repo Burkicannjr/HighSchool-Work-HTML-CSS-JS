@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img style="display: flex;"  width="300px"  height="150px"  class="resim"      src="1.png" alt="">
+    <button id="resimgizle">Resmi gizle</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $("#resimgizle").click(function()
+        {
+            $(".resim").hide();
+        })
+    </script>
+</body>
+</html>

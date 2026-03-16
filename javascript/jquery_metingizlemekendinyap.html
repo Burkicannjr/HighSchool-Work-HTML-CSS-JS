@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="egitimparagraf"> Eğitim,insanın kendi ışığını keşfetmesidir.</p>
+    <button id="degistirEN"> İngilizce </button>
+    <button id="degistirTR">Türkçe</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $("#degistirEN").click(function()
+        {
+            $("#egitimparagraf").text("Education is the discovery of one's own light.")
+        });
+        
+         $("#degistirTR").click(function()
+        {
+            $("#egitimparagraf").text("Eğitim,insanın kendi ışığını keşfetmesidir.")
+        });
+
+
+    </script>
+</body>
+</html>

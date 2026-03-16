@@ -1,0 +1,53 @@
+body{
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: aquamarine
+}
+
+header{
+    background-color: ivory;
+    text-align: center;
+    padding: 15px;
+
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover{
+    color: aquamarine;
+}
+
+.sinif1{
+    text-align: center;
+    background-color: aqua;
+    padding: 10px;
+    border: px solid;
+    
+    
+}
+
+.sinif2s{
+    text-align: center;
+    padding: 1;
+    background-color: cyan;
+    padding: 10px;
+    border: 1px solid
+
+}
+
+.sinif3{
+    text-align: center;
+    padding: 10px;
+    background-color: aqua;
+    border: px solid;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: ivory;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resmin veya kutunun yumuşak bir şekilde kaybolmasını sağlar.</title>
+</head>
+<body>
+    <div id="reklam" style="padding:20px; background:yellow;">BÜYÜK KAMPANYA!</div>
+    <button id="kapat">kapat</button>
+    <button id="ac">ac</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $("#kapat").click(function(){
+            $("#reklam").fadeOut(200);
+        })
+        $("#ac").click(function(){
+            $("#reklam").fadeIn(200);
+        })
+    </script>
+</body>
+</html>

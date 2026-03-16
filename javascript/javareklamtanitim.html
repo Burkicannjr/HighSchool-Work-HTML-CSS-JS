@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="reklamKaldir()">
+    
+    <div id="reklam">
+        <img src="reklam.png" alt="Reklam Buraya Gelecek">
+    </div>
+    <script>
+        function reklamKaldir(){
+            var d = new Date();
+            var dakika = d.getMinutes();
+            alert(dakika);
+
+            if(dakika >= 10){
+                document.getElementById("reklam").style.display = "none";
+            }  else
+            {
+                console.log("Henüz dakika 15 olmadı, reklam duruyor.");
+            }
+        }
+    </script>
+</body>
+</html>

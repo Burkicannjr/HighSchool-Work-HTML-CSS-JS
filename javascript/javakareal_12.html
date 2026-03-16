@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="number" placeholder="Sayı giriniz." id="sayiKutusu"
+        oninput="kareAl()">
+        <p id="sonuc">0</p>
+    </form>
+    <script>
+        function kareAl(){
+            let input = document.getElementById("sayiKutusu");
+            let sayi = Number(input.value);
+            let kare=sayi*sayi;
+            document.getElementById("sonuc").innerHTML = kare
+        }
+    </script>
+</body>
+</html>
